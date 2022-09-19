@@ -1,0 +1,244 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*  以下より本文記述　*/
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(2, 16, 80, 0.9);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.header-left {
+    float: left;
+    text-align: center;
+}
+.header-left a {
+    line-height: 60px;
+    color: white;
+    display: block;
+    padding: 0 30px;
+    background-color: rgba(11, 245, 206, 0.5);
+}
+
+.header-left a:hover {
+    background-color:rgba(11, 245, 206, 0.8)
+    
+}
+.header-right {
+    display:flex;
+    float: right;
+    text-align: center;
+
+}
+.header-right a {
+    line-height: 60px;
+    color: white;
+    padding: 0 30px;
+    margin: 0 15px;
+    background-color: rgba(11, 245, 206, 0.5);
+}
+.header-right a:hover {
+    background-color:rgba(11, 245, 206, 0.9);
+
+}
+
+
+.top {
+    text-align: center;
+    padding: 150px 0 100px 0;
+    background-image: url(portfolio1-top.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+}
+.top h1 {
+    font-size: 50px;
+}
+.top p {
+    font-size: 18px;
+}
+
+
+.works-wrapper {
+    background-color:rgb(200, 226, 230);
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+.heading {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.works p {
+    font-size:20px;
+}
+
+.work-1 {
+    width: 300px;
+    margin: 0 auto;
+}
+.work-1 img {
+    width: 300px;
+    margin-top :20px;
+    opacity: 0.7;
+}
+.work-1 img:hover {
+    opacity: 1;
+}
+
+
+.skill-set-wrapper {
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+
+.heading p {
+    font-size: 20px;
+}
+.heading ul{
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.skill-set {
+    background-color: antiquewhite;
+    display: inline-block;
+    text-align: left;
+    width: 392px;
+    padding: 10px;
+}
+
+/*星評価レーティングのコピペ*/
+.star5_rating{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #CCCCCC; /* グレーカラー 自由に設定化 */
+    /*font-size: 30px; フォントサイズ 自由に設定化 */
+}
+
+.star5_rating:before, .star5_rating:after{
+    content: '★★★★★';
+}
+
+.star5_rating:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffcf32; /* イエローカラー 自由に設定化 */
+}
+
+.star5_rating[data-rate="5"]:after{ width: 100%; } /* 星5 */
+.star5_rating[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
+.star5_rating[data-rate="4"]:after{ width: 80%; } /* 星4 */
+.star5_rating[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
+.star5_rating[data-rate="3"]:after{ width: 60%; } /* 星3 */
+.star5_rating[data-rate="2.5"]:after{ width: 50%; } /* 星2.5 */
+.star5_rating[data-rate="2"]:after{ width: 40%; } /* 星2 */
+.star5_rating[data-rate="1.5"]:after{ width: 30%; } /* 星1.5 */
+.star5_rating[data-rate="1"]:after{ width: 20%; } /* 星1 */
+.star5_rating[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
+.star5_rating[data-rate="0"]:after{ width: 0%; } /* 星0 */
+
+/*星評価レーティングのコピペ終了　*/
+
+
+.self-introduction-wrapper {
+    background-color:rgb(200, 226, 230);
+    padding: 100px 0 100px 0;
+}
+.heading {
+    text-align: center;
+}
+.self-introduction {
+    background-color :aquamarine;
+    display: flex;
+}
+.self-introduction img {
+    background-color: blue;
+}
+.self-introduction p {
+    background-color: #ffcf32;
+    margin-left: 30px;
+}
+.strength {
+    background-color:rgba(11, 245, 206, 0.9);
+    margin-top: 30px;
+}
+
+.futuer-self {
+    background-color: antiquewhite;
+    margin-top: 30px;
+}
+
+
+
+.contact {
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+.btn {
+    padding: 8px 24px;
+    color :white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  .btn:hover {
+    opacity: 1;
+}
+.twitter {
+    background-color:rgb(22, 51, 214);
+    box-shadow: 0 7px #05011a;
+}
+.twitter:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+.fa-twitter {
+    margin-right: 10px;
+}
+
+
+footer {
+    background-color: rgba(2, 16, 80, 0.9);
+    color: white
+}
